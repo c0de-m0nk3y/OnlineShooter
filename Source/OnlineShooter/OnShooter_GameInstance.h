@@ -18,7 +18,7 @@ class ONLINESHOOTER_API UOnShooter_GameInstance : public UGameInstance
 public:
 	UOnShooter_GameInstance();
 
-	virtual void OnCreateSessionComplete(FName ServerName, bool Succeeded);
+	
 
 protected:
 	virtual void Init() override;
@@ -26,6 +26,9 @@ protected:
 	
 
 	IOnlineSessionPtr sessionInterface;
+	TSharedPtr<FOnlineSessionSearch> sessionSearch;
+	virtual void OnCreateSessionComplete(FName ServerName, bool Succeeded);
+	virtual void OnFindSessionsComplete(bool success);
 
 	UFUNCTION(BlueprintCallable)
 		void CreateServer();

@@ -47,17 +47,17 @@ void AOnlineShooterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (IsLocallyControlled())
-	{
-		USkeletalMeshComponent* mesh = (USkeletalMeshComponent*)GetComponentByClass(USkeletalMeshComponent::StaticClass());
-		if (mesh == nullptr)
-		{
-			UE_LOG(LogTemp, Warning, TEXT("mesh was null"));
-			return;
-		}
+	//if (IsLocallyControlled())
+	//{
+	//	USkeletalMeshComponent* mesh = (USkeletalMeshComponent*)GetComponentByClass(USkeletalMeshComponent::StaticClass());
+	//	if (mesh == nullptr)
+	//	{
+	//		UE_LOG(LogTemp, Warning, TEXT("mesh was null"));
+	//		return;
+	//	}
 
-		mesh->SetVisibility(false);
-	}
+	//	mesh->SetVisibility(false);
+	//}
 }
 
 

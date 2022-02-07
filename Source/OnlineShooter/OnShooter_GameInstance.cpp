@@ -25,28 +25,37 @@ void UOnShooter_GameInstance::Init()
 	sessionInterface = subSystem->GetSessionInterface();
 	if (sessionInterface.IsValid())
 	{
-		//Bind delegates...
+		//Bind delegates
 		sessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UOnShooter_GameInstance::OnCreateSessionComplete);
+		sessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UOnShooter_GameInstance::OnFindSessionsComplete);
 	}
 	else
 	{
 		UE_LOG(LogTemp, Error, TEXT("ERROR: sessionInterface was not valid"));
 		return;
 	}
-
-	
-
-
-
 }
 
 void UOnShooter_GameInstance::OnCreateSessionComplete(FName ServerName, bool Succeeded)
 {
-	UE_LOG(LogTemp, Warning, TEXT("OnCreateSessionComplete success: %d"), Succeeded);
+	UE_LOG(LogTemp, Warning, TEXT("OnCreateSessionComplete success=%d"), Succeeded);
 	if (Succeeded)
 	{
 		GetWorld()->ServerTravel("/Game/Scenes/dev_scene?listen", true);
 	}
+}
+
+void UOnShooter_GameInstance::OnFindSessionsComplete(bool success)
+{
+	UE_LOG(LogTemp, Warning, TEXT("OnFindSessionsComplete success=%d"), success);
+	if (!success)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("OnFindSessionsComplete failed"));
+		return;
+	}
+
+	int results_count = sessionSearch->SearchResults.Num();
+	UE_LOG(LogTemp, Warning, TEXT("Servers found=%d"), results_count);
 }
 
 void UOnShooter_GameInstance::CreateServer()
@@ -56,14 +65,24 @@ void UOnShooter_GameInstance::CreateServer()
 	FOnlineSessionSettings s;
 	s.bAllowJoinInProgress = true;
 	s.bIsDedicated = false;
-	//s.bIsLANMatch = true;
+	s.bIsLANMatch = true; //LAN
 	s.bShouldAdvertise = true;
 	s.bUsesPresence = true;
-	s.NumPrivateConnections = 5;
+	s.NumPublicConnections = 25;
 
-	sessionInterface->CreateSession(1, FName("My Session"), s);
+	sessionInterface->CreateSession(0, FName("My Session"), s);
 }
 
 void UOnShooter_GameInstance::JoinServer()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Join server clicked"));
+
+	
+	sessionSearch = MakeShareable(new FOnlineSessionSearch());
+	sessionSearch->bIsLanQuery = true; //LAN
+	sessionSearch->MaxSearchResults = 10000;
+	sessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
+
+	sessionInterface->FindSessions(0, sessionSearch.ToSharedRef());
+	
 }
