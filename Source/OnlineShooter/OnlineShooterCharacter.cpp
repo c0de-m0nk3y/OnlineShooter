@@ -30,7 +30,7 @@ AOnlineShooterCharacter::AOnlineShooterCharacter()
 
 	health = MAX_HEALTH;
 
-
+	
 }
 
 void AOnlineShooterCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
