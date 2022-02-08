@@ -29,6 +29,7 @@ protected:
 	TSharedPtr<FOnlineSessionSearch> sessionSearch;
 	virtual void OnCreateSessionComplete(FName ServerName, bool Succeeded);
 	virtual void OnFindSessionsComplete(bool success);
+	virtual void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
 	UFUNCTION(BlueprintCallable)
 		void CreateServer();

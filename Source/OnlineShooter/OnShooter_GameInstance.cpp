@@ -3,6 +3,7 @@
 
 #include "OnShooter_GameInstance.h"
 
+#include "Kismet/GameplayStatics.h"
 #include "OnlineSubsystem.h"
 #include "OnlineSessionSettings.h"
 
@@ -28,6 +29,7 @@ void UOnShooter_GameInstance::Init()
 		//Bind delegates
 		sessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UOnShooter_GameInstance::OnCreateSessionComplete);
 		sessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UOnShooter_GameInstance::OnFindSessionsComplete);
+		sessionInterface->OnJoinSessionCompleteDelegates.AddUObject(this, &UOnShooter_GameInstance::OnJoinSessionComplete);
 	}
 	else
 	{
@@ -36,10 +38,10 @@ void UOnShooter_GameInstance::Init()
 	}
 }
 
-void UOnShooter_GameInstance::OnCreateSessionComplete(FName ServerName, bool Succeeded)
+void UOnShooter_GameInstance::OnCreateSessionComplete(FName ServerName, bool success)
 {
-	UE_LOG(LogTemp, Warning, TEXT("OnCreateSessionComplete success=%d"), Succeeded);
-	if (Succeeded)
+	UE_LOG(LogTemp, Warning, TEXT("OnCreateSessionComplete success=%d"), success);
+	if (success)
 	{
 		GetWorld()->ServerTravel("/Game/Scenes/dev_scene?listen", true);
 	}
@@ -54,13 +56,36 @@ void UOnShooter_GameInstance::OnFindSessionsComplete(bool success)
 		return;
 	}
 
-	int results_count = sessionSearch->SearchResults.Num();
-	UE_LOG(LogTemp, Warning, TEXT("Servers found=%d"), results_count);
+	TArray<FOnlineSessionSearchResult> searchResults = sessionSearch->SearchResults;
+	UE_LOG(LogTemp, Warning, TEXT("Sessions found=%d"), searchResults.Num());
+	if (searchResults.Num() != 0)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("attempting to join existing session"));
+		sessionInterface->JoinSession(0, "My Session", searchResults[0]);
+	}
+	
+}
+
+void UOnShooter_GameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
+{
+	UE_LOG(LogTemp, Warning, TEXT("JoinSession complete: %s"), *SessionName.ToString());
+	
+	if (APlayerController* playerController = UGameplayStatics::GetPlayerController(GetWorld(), 0))
+	{
+		FString join_address;
+		if (sessionInterface->GetResolvedConnectString(SessionName, join_address))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("joining SERVER: %s"), *join_address);
+			playerController->ClientTravel(join_address, ETravelType::TRAVEL_Relative);
+		}
+
+		
+	}
 }
 
 void UOnShooter_GameInstance::CreateServer()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Creating Server now"));
+	UE_LOG(LogTemp, Warning, TEXT("CreateServer"));
 
 	FOnlineSessionSettings s;
 	s.bAllowJoinInProgress = true;
@@ -68,7 +93,7 @@ void UOnShooter_GameInstance::CreateServer()
 	s.bIsLANMatch = true; //LAN
 	s.bShouldAdvertise = true;
 	s.bUsesPresence = true;
-	s.NumPublicConnections = 25;
+	s.NumPublicConnections = 5;
 
 	sessionInterface->CreateSession(0, FName("My Session"), s);
 }
