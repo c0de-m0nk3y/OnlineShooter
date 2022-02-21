@@ -1,4 +1,4 @@
-﻿Log file open, 02/07/22 13:27:48
+﻿Log file open, 02/08/22 01:36:32
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -14,10 +14,10 @@ LogPakFile: PakFile PathHashIndexSize=45807
 LogPakFile: PakFile FullDirectoryIndexSize=57702
 LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../OnlineShooter/Content/Paks/OnlineShooter-WindowsNoEditor.pak' (chunk index -1, root '../../../') mounted
 LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../OnlineShooter/Content/Paks/OnlineShooter-WindowsNoEditor.pak)
-LogPakFile: OnPakFileMounted2Time == 0.000021
+LogPakFile: OnPakFileMounted2Time == 0.000028
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.096530
+LogStats: Stats thread started at 0.094268
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
 LogInit: Display: Loading text-based GConfig....
 LogPluginManager: Mounting plugin Paper2D
@@ -142,7 +142,7 @@ LogInit: Compiled (64-bit): Nov 30 2021 07:26:28
 LogInit: Compiled with Visual C++: 19.16.27032.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.27
-LogInit: Command Line: 
+LogInit: Command Line:  -LOG
 LogInit: Base Directory: C:/Users/DesignDemon/Documents/Unreal Projects/OnlineShooter/win_build/WindowsNoEditor/OnlineShooter/Binaries/Win64/
 LogInit: Allocator: binned2
 LogInit: Installed Engine Build: 0
@@ -197,645 +197,464 @@ LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
 LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
-[2022.02.07-13.27.48:600][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2022.02.07-13.27.48:600][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
-[2022.02.07-13.27.48:600][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
-[2022.02.07-13.27.48:601][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
-[2022.02.07-13.27.48:631][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:631][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2022.02.07-13.27.48:631][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2022.02.07-13.27.48:631][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:631][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
-[2022.02.07-13.27.48:632][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
-[2022.02.07-13.27.48:633][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
-[2022.02.07-13.27.48:633][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsNoEditor]
-[2022.02.07-13.27.48:633][  0]LogHAL: Display: Platform has ~ 32 GB [34293821440 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2022.02.07-13.27.48:633][  0]LogInit: Going up to parent DeviceProfile [Windows]
-[2022.02.07-13.27.48:633][  0]LogInit: Going up to parent DeviceProfile []
-[2022.02.07-13.27.48:633][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2022.02.07-13.27.48:633][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2022.02.07-13.27.48:634][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
-[2022.02.07-13.27.48:634][  0]LogInit: Computer: DESKTOP-L9AB0F6
-[2022.02.07-13.27.48:634][  0]LogInit: User: DesignDemon
-[2022.02.07-13.27.48:634][  0]LogInit: CPU Page size=4096, Cores=4
-[2022.02.07-13.27.48:634][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2022.02.07-13.27.48:634][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2022.02.07-13.27.48:635][  0]LogMemory: Platform Memory Stats for WindowsNoEditor
-[2022.02.07-13.27.48:635][  0]LogMemory: Process Physical Memory: 110.89 MB used, 110.90 MB peak
-[2022.02.07-13.27.48:635][  0]LogMemory: Process Virtual Memory: 79.74 MB used, 79.74 MB peak
-[2022.02.07-13.27.48:635][  0]LogMemory: Physical Memory: 10446.83 MB used,  22258.30 MB free, 32705.14 MB total
-[2022.02.07-13.27.48:635][  0]LogMemory: Virtual Memory: 134195184.00 MB used,  22541.25 MB free, 134217728.00 MB total
-[2022.02.07-13.27.48:638][  0]LogWindows: WindowsPlatformFeatures enabled
-[2022.02.07-13.27.48:678][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2022.02.07-13.27.48:678][  0]LogInit: Using OS detected language (en-US).
-[2022.02.07-13.27.48:678][  0]LogInit: Using OS detected locale (en-GB).
-[2022.02.07-13.27.48:679][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2022.02.07-13.27.48:716][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
-[2022.02.07-13.27.48:744][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2022.02.07-13.27.48:744][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2022.02.07-13.27.48:781][  0]LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
-[2022.02.07-13.27.48:784][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2022.02.07-13.27.48:784][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2022.02.07-13.27.48:784][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2022.02.07-13.27.48:784][  0]LogD3D11RHI: D3D11 adapters:
-[2022.02.07-13.27.48:896][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
-[2022.02.07-13.27.48:896][  0]LogD3D11RHI:       4018/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:       0/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI: Chosen D3D11 Adapter:
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     Description : NVIDIA GeForce GTX 1050 Ti
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     VendorId    : 10de
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     DeviceId    : 1c82
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     SubSysId    : 8c961462
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     Revision    : 00a1
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     DedicatedVideoMemory : 4213178368 bytes
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     SharedSystemMemory : 17146910720 bytes
-[2022.02.07-13.27.48:900][  0]LogD3D11RHI:     AdapterLuid : 0 49680
-[2022.02.07-13.27.48:906][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2022.02.07-13.27.48:906][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
-[2022.02.07-13.27.48:906][  0]LogWindows: EnumDisplayDevices:
-[2022.02.07-13.27.48:907][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:1)
-[2022.02.07-13.27.48:907][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
-[2022.02.07-13.27.48:907][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2022.02.07-13.27.48:907][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2022.02.07-13.27.48:908][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:   Driver Version: 511.65 (internal:30.0.15.1165, unified:511.65)
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:      Driver Date: 1-28-2022
-[2022.02.07-13.27.48:908][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI: Creating D3DDevice using adapter:
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     Description : NVIDIA GeForce GTX 1050 Ti
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     VendorId    : 10de
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     DeviceId    : 1c82
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     SubSysId    : 8c961462
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     Revision    : 00a1
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     DedicatedVideoMemory : 4213178368 bytes
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     SharedSystemMemory : 17146910720 bytes
-[2022.02.07-13.27.48:908][  0]LogD3D11RHI:     AdapterLuid : 0 49680
-[2022.02.07-13.27.48:970][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2022.02.07-13.27.48:970][  0]LogD3D11RHI: Async texture creation enabled
-[2022.02.07-13.27.48:970][  0]LogD3D11RHI: Array index from any shader is supported
-[2022.02.07-13.27.48:973][  0]LogD3D11RHI: HDR output is supported on display 1 (NvId: 0x80061082).
-[2022.02.07-13.27.49:001][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2022.02.07-13.27.49:048][  0]LogRHI: GeForceNow SDK initialized: 1
-[2022.02.07-13.27.49:048][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
-[2022.02.07-13.27.49:052][  0]LogShaderLibrary: Display: Using ../../../OnlineShooter/Content/ShaderArchive-Global-PCD3D_SM5.ushaderbytecode for material shader code. Total 1951 unique shaders.
-[2022.02.07-13.27.49:052][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
-[2022.02.07-13.27.49:052][  0]LogShaderLibrary: Display: Logical shader library 'Global' has been created, components 1
-[2022.02.07-13.27.49:052][  0]LogTemp: Warning: Clearing the OS Cache
-[2022.02.07-13.27.49:052][  0]LogODSC: ODSC Thread active.
-[2022.02.07-13.27.49:054][  0]LogPakFile: New pak file ../../../OnlineShooter/Content/Paks/OnlineShooter-WindowsNoEditor.pak added to pak precacher.
-[2022.02.07-13.27.49:079][  0]LogSlate: Using FreeType 2.10.0
-[2022.02.07-13.27.49:080][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2022.02.07-13.27.49:124][  0]LogShaderLibrary: Display: Using ../../../OnlineShooter/Content/ShaderArchive-OnlineShooter-PCD3D_SM5.ushaderbytecode for material shader code. Total 1516 unique shaders.
-[2022.02.07-13.27.49:124][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library OnlineShooter
-[2022.02.07-13.27.49:125][  0]LogShaderLibrary: Display: Logical shader library 'OnlineShooter' has been created, components 1
-[2022.02.07-13.27.49:125][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
-[2022.02.07-13.27.49:125][  0]LogShaderLibrary: Display: Using ../../../OnlineShooter/Content/ShaderArchive-OnlineShooter-PCD3D_SM5.ushaderbytecode for material shader code. Total 1516 unique shaders.
-[2022.02.07-13.27.49:125][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library OnlineShooter
-[2022.02.07-13.27.49:125][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
-[2022.02.07-13.27.49:125][  0]LogRHI: Display: Failed to open default shader pipeline cache for OnlineShooter using shader platform 0.
-[2022.02.07-13.27.49:125][  0]LogInit: Using OS detected language (en-US).
-[2022.02.07-13.27.49:125][  0]LogInit: Using OS detected locale (en-GB).
-[2022.02.07-13.27.49:125][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
-[2022.02.07-13.27.49:125][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the locale.
-[2022.02.07-13.27.49:125][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
-[2022.02.07-13.27.49:125][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
-[2022.02.07-13.27.49:127][  0]LogTextLocalizationManager: Compacting localization data took   0.90ms
-[2022.02.07-13.27.49:127][  0]LogAssetRegistry: FAssetRegistry took 0.0015 seconds to start up
-[2022.02.07-13.27.49:199][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
-[2022.02.07-13.27.49:200][  0]LogPackageLocalizationCache: Processed 26 localized package path(s) for 1 prioritized culture(s) in 0.000073 seconds
-[2022.02.07-13.27.49:206][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
-[2022.02.07-13.27.49:206][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
-[2022.02.07-13.27.49:206][  0]LogInit: Active device profile: [000001CE74021180][000001CE63980010 49] WindowsNoEditor
-[2022.02.07-13.27.49:206][  0]LogInit: Profiles: [000001CE74021480][000001CE6FB20010 49] Windows, [000001CE74021180][000001CE63980010 49] WindowsNoEditor, 
-[2022.02.07-13.27.49:241][  0]LogNetVersion: OnlineShooter 1.0.0, NetCL: 17155196, EngineNetVer: 17, GameNetVer: 0 (Checksum: 2065074109)
-[2022.02.07-13.27.49:283][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2022.02.07-13.27.49:284][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2022.02.07-13.27.49:285][  0]LogHMD: PokeAHoleMaterial loaded successfully
-[2022.02.07-13.27.49:310][  0]LogMoviePlayer: Initializing movie player
-[2022.02.07-13.27.49:311][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: C02362B14DC17C8D9867C18807A68834 | Instance: 4BA63F10423FD8803395CEACC074E9B2 (DESKTOP-L9AB0F6-13356).
-[2022.02.07-13.27.49:313][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2022.02.07-13.27.49:313][  0]LogOcInput: OculusInput pre-init called
-[2022.02.07-13.27.49:319][  0]LogUObjectArray: 15798 objects as part of root set at end of initial load.
-[2022.02.07-13.27.49:319][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
-[2022.02.07-13.27.49:319][  0]LogUObjectAllocator: 3223032 out of 0 bytes used by permanent object pool.
-[2022.02.07-13.27.49:319][  0]LogUObjectArray: CloseDisregardForGC: 15798/15798 objects in disregard for GC pool
-[2022.02.07-13.27.49:319][  0]LogEngine: Initializing Engine...
-[2022.02.07-13.27.49:321][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
-[2022.02.07-13.27.49:322][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2022.02.07-13.27.49:322][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2022.02.07-13.27.49:381][  0]LogInit: Initializing FReadOnlyCVARCache
-[2022.02.07-13.27.49:381][  0]LogAudio: Display: Initializing Audio Device Manager...
-[2022.02.07-13.27.49:381][  0]LogAudio: Display: Loading Default Audio Settings Objects...
-[2022.02.07-13.27.49:382][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
-[2022.02.07-13.27.49:382][  0]LogAudio: Display: Audio Device Manager Initialized
-[2022.02.07-13.27.49:382][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2022.02.07-13.27.49:382][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2022.02.07-13.27.49:382][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
-[2022.02.07-13.27.49:382][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
-[2022.02.07-13.27.49:382][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
-[2022.02.07-13.27.49:382][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2022.02.07-13.27.49:389][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2022.02.07-13.27.49:400][  0]LogAudioMixer: Display: 0: FrontLeft
-[2022.02.07-13.27.49:400][  0]LogAudioMixer: Display: 1: FrontRight
-[2022.02.07-13.27.49:424][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
-[2022.02.07-13.27.49:425][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2022.02.07-13.27.49:426][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2022.02.07-13.27.49:426][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2022.02.07-13.27.49:427][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2022.02.07-13.27.49:427][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
-[2022.02.07-13.27.49:427][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
-[2022.02.07-13.27.49:428][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
-[2022.02.07-13.27.49:428][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
-[2022.02.07-13.27.49:428][  0]LogInit: FAudioDevice initialized.
-[2022.02.07-13.27.49:428][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2022.02.07-13.27.49:428][  0]LogInit: Texture streaming: Enabled
-[2022.02.07-13.27.49:430][  0]LogTemp: Warning: INIT
-[2022.02.07-13.27.49:430][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
-[2022.02.07-13.27.49:431][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2022.02.07-13.27.49:431][  0]LogInit: Display: Game Engine Initialized.
-[2022.02.07-13.27.49:432][  0]LogInit: Display: Starting Game.
-[2022.02.07-13.27.49:432][  0]LogNet: Browse: /Game/Scenes/MainMenu?Name=Player
-[2022.02.07-13.27.49:432][  0]LogLoad: LoadMap: /Game/Scenes/MainMenu?Name=Player
-[2022.02.07-13.27.49:432][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
-[2022.02.07-13.27.49:433][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2022.02.07-13.27.49:433][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2022.02.07-13.27.49:435][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
-[2022.02.07-13.27.49:436][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
-[2022.02.07-13.27.49:441][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'MainMenu'.
-[2022.02.07-13.27.49:443][  0]LogAIModule: Creating AISystem for world MainMenu
-[2022.02.07-13.27.49:443][  0]LogLoad: Game class is 'BP_mMenu_GameModeBase_C'
-[2022.02.07-13.27.49:444][  0]LogWorld: Bringing World /Game/Scenes/MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.07-13.27.49
-[2022.02.07-13.27.49:444][  0]LogWorld: Bringing up level for play took: 0.000202
-[2022.02.07-13.27.49:444][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2022.02.07-13.27.49:445][  0]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
-[2022.02.07-13.27.49:445][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
-[2022.02.07-13.27.49:445][  0]LogLoad: Took 0.013486 seconds to LoadMap(/Game/Scenes/MainMenu)
-[2022.02.07-13.27.49:446][  0]LogSlate: Took 0.000316 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
-[2022.02.07-13.27.49:527][  0]LogSlate: Took 0.000423 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2022.02.07-13.27.49:595][  0]LogRenderer: Reallocating scene render targets to support 1600x900 Format 10 NumSamples 1 (Frame:1).
-[2022.02.07-13.27.49:595][  0]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
-[2022.02.07-13.27.49:595][  0]LogPakFile: AllPaks IndexSizes: DirectoryHashSize=204436, PathHashSize=16, EntriesSize=32752, TotalSize=237204
-[2022.02.07-13.27.49:595][  0]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
-[2022.02.07-13.27.49:595][  0]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
-[2022.02.07-13.27.49:595][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
-[2022.02.07-13.27.49:595][  0]LogLoad: (Engine Initialization) Total time: 1.32 seconds
-[2022.02.07-13.27.49:598][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2022.02.07-13.27.49:599][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2022.02.07-13.27.49:885][  0]LogSlate: Slate font cache was flushed
-[2022.02.07-13.27.49:888][  1]LogSlate: Took 0.000297 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2022.02.07-13.27.49:889][  1]LogSlate: Took 0.000276 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
-[2022.02.07-13.27.50:954][205]LogTemp: Warning: Join server clicked
-[2022.02.07-13.27.55:959][982]LogTemp: Warning: OnFindSessionsComplete success=1
-[2022.02.07-13.27.55:959][982]LogTemp: Warning: Servers found=0
-[2022.02.07-13.27.58:591][370]LogSlate: Request Window 'OnlineShooter (64-bit Development PCD3D_SM5) ' being destroyed
-[2022.02.07-13.27.58:598][370]LogSlate: Window 'OnlineShooter (64-bit Development PCD3D_SM5) ' being destroyed
-[2022.02.07-13.27.58:599][370]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
-[2022.02.07-13.27.58:620][370]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2022.02.07-13.27.58:620][370]LogEngine: All Windows Closed
-[2022.02.07-13.27.58:620][370]LogWindows: FPlatformMisc::RequestExit(0)
-[2022.02.07-13.27.58:620][370]LogWindows: FPlatformMisc::RequestExitWithStatus(0, 0)
-[2022.02.07-13.27.58:620][370]LogCore: Engine exit requested (reason: Win RequestExit)
-[2022.02.07-13.27.58:621][371]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
-[2022.02.07-13.27.58:621][371]LogInit: Display: PreExit Game.
-[2022.02.07-13.27.58:631][371]LogWorld: BeginTearingDown for /Game/Scenes/MainMenu
-[2022.02.07-13.27.58:631][371]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
-[2022.02.07-13.27.58:631][371]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2022.02.07-13.27.59:327][371]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
-[2022.02.07-13.27.59:327][371]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
-[2022.02.07-13.27.59:327][371]LogAudio: Display: Audio Device unregistered from world 'MainMenu'.
-[2022.02.07-13.27.59:369][371]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2022.02.07-13.27.59:369][371]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
-[2022.02.07-13.27.59:375][371]LogAudio: Display: Audio Device Manager Shutdown
-[2022.02.07-13.27.59:377][371]LogExit: Preparing to exit.
-[2022.02.07-13.27.59:377][371]LogMoviePlayer: Shutting down movie player
-[2022.02.07-13.27.59:380][371]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2022.02.07-13.27.59:386][371]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
-[2022.02.07-13.27.59:387][371]LogExit: Game engine shut down
-[2022.02.07-13.27.59:402][371]LogExit: Object subsystem successfully closed.
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module AutomationController (360)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module AutomationWorker (358)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module Voice (356)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module AIModule (354)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module GameplayDebugger (353)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module NavigationSystem (351)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (348)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module WebMMedia (346)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module OpenXRInput (344)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module OculusMR (342)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (340)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (338)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (336)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (334)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module CharacterAI (332)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module PlanarCut (330)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module SessionServices (328)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module LiveCoding (326)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module LevelSequence (324)
-[2022.02.07-13.27.59:409][371]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (322)
-[2022.02.07-13.27.59:410][371]LogModuleManager: Shutting down and abandoning module MovieScene (320)
-[2022.02.07-13.27.59:410][371]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (318)
-[2022.02.07-13.27.59:410][371]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (316)
-[2022.02.07-13.27.59:410][371]LogModuleManager: Shutting down and abandoning module AudioMixerCore (315)
-[2022.02.07-13.27.59:410][371]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (312)
-[2022.02.07-13.27.59:410][371]LogModuleManager: Shutting down and abandoning module ProfilerService (310)
-[2022.02.07-13.27.59:593][371]LogModuleManager: Shutting down and abandoning module TaskGraph (308)
-[2022.02.07-13.27.59:593][371]LogModuleManager: Shutting down and abandoning module Synthesis (306)
-[2022.02.07-13.27.59:593][371]LogModuleManager: Shutting down and abandoning module TakeMovieScene (304)
-[2022.02.07-13.27.59:593][371]LogModuleManager: Shutting down and abandoning module LiveLinkMovieScene (302)
-[2022.02.07-13.27.59:593][371]LogModuleManager: Shutting down and abandoning module LiveLinkComponents (300)
-[2022.02.07-13.27.59:593][371]LogModuleManager: Shutting down and abandoning module LiveLink (298)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module OculusInput (296)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (294)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module GooglePAD (292)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (290)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module CableComponent (288)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AudioCapture (286)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (285)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AssetTags (282)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (280)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AppleImageUtils (278)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AndroidPermission (276)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (274)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MediaCompositing (272)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module ImgMedia (270)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (268)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (266)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (264)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (262)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (260)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module OpenImageDenoise (258)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MotoSynth (256)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module ChaosNiagara (254)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (252)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (250)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module EditableMesh (248)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module MeshConversion (246)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module DynamicMesh (244)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (242)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module GeometricObjects (240)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module BackChannel (238)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AutomationUtils (236)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (234)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module GeometryCache (232)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module UObjectPlugin (230)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module OodleNetworkHandlerComponent (228)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module TemplateSequence (226)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module OnlineShooter (224)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AudioSynesthesia (222)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaCore (220)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module SoundFields (218)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (216)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (212)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module ActorSequence (210)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module UdpMessaging (208)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module TcpMessaging (206)
-[2022.02.07-13.28.00:319][371]LogModuleManager: Shutting down and abandoning module ImgMediaEngine (204)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (202)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (200)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (198)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (196)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (194)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (192)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (190)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (188)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapController (186)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (184)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapAR (182)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (180)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (178)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module Niagara (176)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module SignalProcessing (175)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module NiagaraCore (172)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module FacialAnimation (170)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module SignificanceManager (168)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module AnimationSharing (166)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module GameplayCameras (164)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (162)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module Paper2D (160)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (158)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (156)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (154)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module PacketHandler (152)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (150)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MediaAssets (148)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module Overlay (146)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module FunctionalTesting (144)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module MessageLog (142)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module UMG (140)
-[2022.02.07-13.28.00:320][371]LogModuleManager: Shutting down and abandoning module SlateReflector (138)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module Slate (136)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module SlateCore (134)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module MRMesh (132)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module Messaging (130)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (128)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module XAudio2 (126)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module Networking (124)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module Core (122)
-[2022.02.07-13.28.00:321][371]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (120)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module ImageWrapper (116)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module D3D11RHI (114)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module InputCore (112)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module Settings (110)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module PhysXCooking (108)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module Chaos (106)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (104)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (103)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module AVEncoder (102)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (98)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module SteamVRInput (96)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module SteamVR (94)
-[2022.02.07-13.28.00:322][371]LogHMD: Freeing OpenVRDLLHandle.
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module OpenXRHandTracking (92)
-[2022.02.07-13.28.00:322][371]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module OpenXRAR (90)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module AugmentedReality (89)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module OpenXRHMD (86)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module OpenXREyeTracker (84)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module OculusHMD (82)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (80)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module ChunkDownloader (78)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (76)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (72)
-[2022.02.07-13.28.00:322][371]LogModuleManager: Shutting down and abandoning module HTTP (67)
-[2022.02.07-13.28.00:322][371]LogHttp: Display: cleaning up 0 outstanding Http requests.
-[2022.02.07-13.28.00:327][371]LogModuleManager: Shutting down and abandoning module SSL (66)
-[2022.02.07-13.28.00:327][371]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
-[2022.02.07-13.28.00:327][371]LogModuleManager: Shutting down and abandoning module Media (61)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module MediaInfo (60)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module ExrReaderGpu (56)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module MLSDK (54)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module MagicLeap (52)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (50)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module NiagaraShader (48)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module ChaosCloth (46)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module VariantManagerContent (44)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module DatasmithContent (42)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module PixWinPlugin (40)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module AISupportModule (38)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (36)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (34)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module PlatformCrypto (32)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module PythonScriptPluginPreload (30)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module OodleDataCompressionFormat (28)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module RenderCore (26)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module Landscape (24)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module Renderer (18)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module Engine (16)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
-[2022.02.07-13.28.00:328][371]LogModuleManager: Shutting down and abandoning module PakFile (4)
-[2022.02.07-13.28.00:329][371]LogModuleManager: Shutting down and abandoning module RSA (3)
-[2022.02.07-13.28.00:329][371]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
-[2022.02.07-13.28.00:333][371]LogD3D11RHI: Shutdown
-[2022.02.07-13.28.00:333][371]LogD3D11RHI: CleanupD3DDevice
-[2022.02.07-13.28.00:334][371]LogExit: Exiting.
-[2022.02.07-13.28.00:339][371]Log file closed, 02/07/22 13:28:00
+[2022.02.08-01.36.34:966][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2022.02.08-01.36.34:967][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.02.08-01.36.34:967][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2022.02.08-01.36.34:967][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.02.08-01.36.34:968][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.02.08-01.36.34:968][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.02.08-01.36.34:969][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.02.08-01.36.34:969][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.02.08-01.36.34:969][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.02.08-01.36.34:970][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.02.08-01.36.34:970][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.02.08-01.36.34:970][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.02.08-01.36.34:971][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.02.08-01.36.34:971][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.02.08-01.36.34:971][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.02.08-01.36.34:972][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.02.08-01.36.34:972][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.02.08-01.36.34:972][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.02.08-01.36.34:973][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.02.08-01.36.34:973][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.02.08-01.36.34:973][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.02.08-01.36.34:974][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.02.08-01.36.34:974][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.02.08-01.36.34:974][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.02.08-01.36.34:975][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.02.08-01.36.34:975][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.02.08-01.36.34:976][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.02.08-01.36.34:976][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.02.08-01.36.34:978][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.02.08-01.36.34:978][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.02.08-01.36.34:978][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.02.08-01.36.34:979][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.02.08-01.36.34:982][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.02.08-01.36.34:983][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.02.08-01.36.34:983][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.02.08-01.36.34:984][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.02.08-01.36.34:984][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.02.08-01.36.35:013][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:013][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.02.08-01.36.35:014][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.02.08-01.36.35:015][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:015][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.02.08-01.36.35:015][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:016][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.02.08-01.36.35:016][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.02.08-01.36.35:017][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.02.08-01.36.35:017][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.02.08-01.36.35:017][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.02.08-01.36.35:018][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.02.08-01.36.35:018][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.02.08-01.36.35:018][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.02.08-01.36.35:019][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.02.08-01.36.35:019][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.02.08-01.36.35:020][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.02.08-01.36.35:020][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.02.08-01.36.35:020][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.02.08-01.36.35:021][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.02.08-01.36.35:021][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.02.08-01.36.35:021][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.02.08-01.36.35:022][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.02.08-01.36.35:022][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.02.08-01.36.35:022][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:023][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.02.08-01.36.35:023][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.02.08-01.36.35:023][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.02.08-01.36.35:024][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.02.08-01.36.35:024][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.02.08-01.36.35:025][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.02.08-01.36.35:025][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.02.08-01.36.35:025][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.02.08-01.36.35:026][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.02.08-01.36.35:029][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.02.08-01.36.35:029][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.02.08-01.36.35:030][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.02.08-01.36.35:030][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.02.08-01.36.35:030][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.02.08-01.36.35:030][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.02.08-01.36.35:031][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.02.08-01.36.35:031][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.02.08-01.36.35:032][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.02.08-01.36.35:032][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.02.08-01.36.35:033][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.02.08-01.36.35:033][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.02.08-01.36.35:033][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.02.08-01.36.35:033][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.02.08-01.36.35:033][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.02.08-01.36.35:034][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.02.08-01.36.35:034][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.02.08-01.36.35:034][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.02.08-01.36.35:035][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.02.08-01.36.35:035][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.02.08-01.36.35:035][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.02.08-01.36.35:036][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:036][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.02.08-01.36.35:036][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.02.08-01.36.35:037][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.02.08-01.36.35:037][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.02.08-01.36.35:038][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.02.08-01.36.35:038][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.02.08-01.36.35:038][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.02.08-01.36.35:039][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.02.08-01.36.35:039][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.02.08-01.36.35:039][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:040][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.02.08-01.36.35:040][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.02.08-01.36.35:041][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.02.08-01.36.35:044][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.02.08-01.36.35:045][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.02.08-01.36.35:045][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.02.08-01.36.35:045][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.02.08-01.36.35:046][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.02.08-01.36.35:046][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.02.08-01.36.35:046][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.02.08-01.36.35:047][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.02.08-01.36.35:047][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.02.08-01.36.35:047][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.02.08-01.36.35:048][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.02.08-01.36.35:048][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.02.08-01.36.35:048][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.02.08-01.36.35:049][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.02.08-01.36.35:049][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.02.08-01.36.35:050][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.02.08-01.36.35:050][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.02.08-01.36.35:050][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.02.08-01.36.35:051][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.02.08-01.36.35:051][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.02.08-01.36.35:051][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.02.08-01.36.35:052][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.02.08-01.36.35:052][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.02.08-01.36.35:052][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.02.08-01.36.35:053][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.02.08-01.36.35:053][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2022.02.08-01.36.35:053][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:054][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.02.08-01.36.35:054][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.02.08-01.36.35:055][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:055][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.02.08-01.36.35:056][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.02.08-01.36.35:058][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.02.08-01.36.35:059][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2022.02.08-01.36.35:059][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsNoEditor]
+[2022.02.08-01.36.35:060][  0]LogHAL: Display: Platform has ~ 32 GB [34293821440 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.02.08-01.36.35:060][  0]LogInit: Going up to parent DeviceProfile [Windows]
+[2022.02.08-01.36.35:060][  0]LogInit: Going up to parent DeviceProfile []
+[2022.02.08-01.36.35:061][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:061][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.02.08-01.36.35:062][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.02.08-01.36.35:062][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:062][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.02.08-01.36.35:062][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:063][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.02.08-01.36.35:063][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.02.08-01.36.35:064][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.02.08-01.36.35:064][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.02.08-01.36.35:064][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.02.08-01.36.35:065][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.02.08-01.36.35:065][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.02.08-01.36.35:065][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.02.08-01.36.35:066][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.02.08-01.36.35:066][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.02.08-01.36.35:066][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.02.08-01.36.35:067][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.02.08-01.36.35:067][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.02.08-01.36.35:067][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.02.08-01.36.35:068][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.02.08-01.36.35:068][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.02.08-01.36.35:069][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.02.08-01.36.35:069][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.02.08-01.36.35:070][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:070][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.02.08-01.36.35:071][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.02.08-01.36.35:071][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.02.08-01.36.35:072][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.02.08-01.36.35:075][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.02.08-01.36.35:075][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.02.08-01.36.35:076][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.02.08-01.36.35:076][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.02.08-01.36.35:077][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.02.08-01.36.35:077][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.02.08-01.36.35:077][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.02.08-01.36.35:077][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.02.08-01.36.35:078][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.02.08-01.36.35:078][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.02.08-01.36.35:079][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.02.08-01.36.35:079][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.02.08-01.36.35:079][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.02.08-01.36.35:080][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.02.08-01.36.35:080][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.02.08-01.36.35:080][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.02.08-01.36.35:082][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.02.08-01.36.35:082][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.02.08-01.36.35:083][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.02.08-01.36.35:083][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.02.08-01.36.35:084][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.02.08-01.36.35:084][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.02.08-01.36.35:084][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.02.08-01.36.35:085][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.02.08-01.36.35:086][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.02.08-01.36.35:086][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.02.08-01.36.35:087][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:087][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.02.08-01.36.35:088][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.02.08-01.36.35:090][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.02.08-01.36.35:091][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.02.08-01.36.35:091][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.02.08-01.36.35:091][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.02.08-01.36.35:091][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.02.08-01.36.35:091][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.02.08-01.36.35:092][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.02.08-01.36.35:092][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:092][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.02.08-01.36.35:093][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.02.08-01.36.35:093][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.02.08-01.36.35:094][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.02.08-01.36.35:094][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.02.08-01.36.35:094][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.02.08-01.36.35:095][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.02.08-01.36.35:095][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.02.08-01.36.35:096][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.02.08-01.36.35:096][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.02.08-01.36.35:096][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.02.08-01.36.35:096][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.02.08-01.36.35:097][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.02.08-01.36.35:097][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.02.08-01.36.35:097][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.02.08-01.36.35:098][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.02.08-01.36.35:098][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.02.08-01.36.35:099][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.02.08-01.36.35:099][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.02.08-01.36.35:099][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.02.08-01.36.35:100][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.02.08-01.36.35:100][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.02.08-01.36.35:100][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.02.08-01.36.35:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.02.08-01.36.35:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.02.08-01.36.35:101][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.02.08-01.36.35:102][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.02.08-01.36.35:105][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.02.08-01.36.35:105][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2022.02.08-01.36.35:105][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:106][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.02.08-01.36.35:106][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.02.08-01.36.35:106][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2022.02.08-01.36.35:107][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.02.08-01.36.35:107][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.02.08-01.36.35:108][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.02.08-01.36.35:108][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.02.08-01.36.35:108][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.02.08-01.36.35:109][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.02.08-01.36.35:109][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.02.08-01.36.35:110][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../OnlineShooter/Saved/Config/WindowsNoEditor/Engine.ini]
+[2022.02.08-01.36.35:110][  0]LogInit: Computer: DESKTOP-L9AB0F6
+[2022.02.08-01.36.35:111][  0]LogInit: User: DesignDemon
+[2022.02.08-01.36.35:111][  0]LogInit: CPU Page size=4096, Cores=4
+[2022.02.08-01.36.35:111][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.02.08-01.36.35:112][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2022.02.08-01.36.35:112][  0]LogMemory: Platform Memory Stats for WindowsNoEditor
+[2022.02.08-01.36.35:112][  0]LogMemory: Process Physical Memory: 105.95 MB used, 105.95 MB peak
+[2022.02.08-01.36.35:113][  0]LogMemory: Process Virtual Memory: 79.82 MB used, 79.82 MB peak
+[2022.02.08-01.36.35:113][  0]LogMemory: Physical Memory: 6852.45 MB used,  25852.68 MB free, 32705.14 MB total
+[2022.02.08-01.36.35:113][  0]LogMemory: Virtual Memory: 134189672.00 MB used,  28056.85 MB free, 134217728.00 MB total
+[2022.02.08-01.36.35:116][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.02.08-01.36.35:158][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.02.08-01.36.35:158][  0]LogInit: Using OS detected language (en-US).
+[2022.02.08-01.36.35:159][  0]LogInit: Using OS detected locale (en-GB).
+[2022.02.08-01.36.35:160][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2022.02.08-01.36.35:189][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.02.08-01.36.35:218][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.02.08-01.36.35:219][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.02.08-01.36.35:256][  0]LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+[2022.02.08-01.36.35:259][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.02.08-01.36.35:259][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.02.08-01.36.35:260][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.02.08-01.36.35:261][  0]LogD3D11RHI: D3D11 adapters:
+[2022.02.08-01.36.35:370][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2022.02.08-01.36.35:370][  0]LogD3D11RHI:       4018/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2022.02.08-01.36.35:374][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.02.08-01.36.35:374][  0]LogD3D11RHI:       0/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.02.08-01.36.35:374][  0]LogD3D11RHI: Chosen D3D11 Adapter:
+[2022.02.08-01.36.35:375][  0]LogD3D11RHI:     Description : NVIDIA GeForce GTX 1050 Ti
+[2022.02.08-01.36.35:375][  0]LogD3D11RHI:     VendorId    : 10de
+[2022.02.08-01.36.35:375][  0]LogD3D11RHI:     DeviceId    : 1c82
+[2022.02.08-01.36.35:376][  0]LogD3D11RHI:     SubSysId    : 8c961462
+[2022.02.08-01.36.35:376][  0]LogD3D11RHI:     Revision    : 00a1
+[2022.02.08-01.36.35:377][  0]LogD3D11RHI:     DedicatedVideoMemory : 4213178368 bytes
+[2022.02.08-01.36.35:377][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2022.02.08-01.36.35:378][  0]LogD3D11RHI:     SharedSystemMemory : 17146910720 bytes
+[2022.02.08-01.36.35:378][  0]LogD3D11RHI:     AdapterLuid : 0 49680
+[2022.02.08-01.36.35:384][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.02.08-01.36.35:384][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
+[2022.02.08-01.36.35:385][  0]LogWindows: EnumDisplayDevices:
+[2022.02.08-01.36.35:385][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:1)
+[2022.02.08-01.36.35:386][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
+[2022.02.08-01.36.35:387][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2022.02.08-01.36.35:387][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2022.02.08-01.36.35:387][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.02.08-01.36.35:388][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2022.02.08-01.36.35:388][  0]LogD3D11RHI:   Driver Version: 511.65 (internal:30.0.15.1165, unified:511.65)
+[2022.02.08-01.36.35:388][  0]LogD3D11RHI:      Driver Date: 1-28-2022
+[2022.02.08-01.36.35:389][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
+[2022.02.08-01.36.35:389][  0]LogD3D11RHI: Creating D3DDevice using adapter:
+[2022.02.08-01.36.35:389][  0]LogD3D11RHI:     Description : NVIDIA GeForce GTX 1050 Ti
+[2022.02.08-01.36.35:390][  0]LogD3D11RHI:     VendorId    : 10de
+[2022.02.08-01.36.35:390][  0]LogD3D11RHI:     DeviceId    : 1c82
+[2022.02.08-01.36.35:390][  0]LogD3D11RHI:     SubSysId    : 8c961462
+[2022.02.08-01.36.35:391][  0]LogD3D11RHI:     Revision    : 00a1
+[2022.02.08-01.36.35:394][  0]LogD3D11RHI:     DedicatedVideoMemory : 4213178368 bytes
+[2022.02.08-01.36.35:394][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2022.02.08-01.36.35:394][  0]LogD3D11RHI:     SharedSystemMemory : 17146910720 bytes
+[2022.02.08-01.36.35:395][  0]LogD3D11RHI:     AdapterLuid : 0 49680
+[2022.02.08-01.36.35:460][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.02.08-01.36.35:460][  0]LogD3D11RHI: Async texture creation enabled
+[2022.02.08-01.36.35:461][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.02.08-01.36.35:465][  0]LogD3D11RHI: HDR output is supported on display 1 (NvId: 0x80061082).
+[2022.02.08-01.36.35:501][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2022.02.08-01.36.35:542][  0]LogRHI: GeForceNow SDK initialized: 1
+[2022.02.08-01.36.35:542][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.02.08-01.36.35:547][  0]LogShaderLibrary: Display: Using ../../../OnlineShooter/Content/ShaderArchive-Global-PCD3D_SM5.ushaderbytecode for material shader code. Total 1951 unique shaders.
+[2022.02.08-01.36.35:547][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
+[2022.02.08-01.36.35:548][  0]LogShaderLibrary: Display: Logical shader library 'Global' has been created, components 1
+[2022.02.08-01.36.35:548][  0]LogTemp: Warning: Clearing the OS Cache
+[2022.02.08-01.36.35:549][  0]LogODSC: ODSC Thread active.
+[2022.02.08-01.36.35:551][  0]LogPakFile: New pak file ../../../OnlineShooter/Content/Paks/OnlineShooter-WindowsNoEditor.pak added to pak precacher.
+[2022.02.08-01.36.35:577][  0]LogSlate: Using FreeType 2.10.0
+[2022.02.08-01.36.35:577][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.02.08-01.36.35:619][  0]LogShaderLibrary: Display: Using ../../../OnlineShooter/Content/ShaderArchive-OnlineShooter-PCD3D_SM5.ushaderbytecode for material shader code. Total 1516 unique shaders.
+[2022.02.08-01.36.35:620][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library OnlineShooter
+[2022.02.08-01.36.35:621][  0]LogShaderLibrary: Display: Logical shader library 'OnlineShooter' has been created, components 1
+[2022.02.08-01.36.35:622][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2022.02.08-01.36.35:623][  0]LogShaderLibrary: Display: Using ../../../OnlineShooter/Content/ShaderArchive-OnlineShooter-PCD3D_SM5.ushaderbytecode for material shader code. Total 1516 unique shaders.
+[2022.02.08-01.36.35:623][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library OnlineShooter
+[2022.02.08-01.36.35:624][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2022.02.08-01.36.35:624][  0]LogRHI: Display: Failed to open default shader pipeline cache for OnlineShooter using shader platform 0.
+[2022.02.08-01.36.35:625][  0]LogRHI: Display: Failed to open default shader pipeline cache for OnlineShooter using shader platform 0.
+[2022.02.08-01.36.35:625][  0]LogInit: Using OS detected language (en-US).
+[2022.02.08-01.36.35:626][  0]LogInit: Using OS detected locale (en-GB).
+[2022.02.08-01.36.35:626][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2022.02.08-01.36.35:627][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the locale.
+[2022.02.08-01.36.35:627][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2022.02.08-01.36.35:627][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2022.02.08-01.36.35:629][  0]LogTextLocalizationManager: Compacting localization data took   0.90ms
+[2022.02.08-01.36.35:629][  0]LogAssetRegistry: FAssetRegistry took 0.0011 seconds to start up
+[2022.02.08-01.36.35:707][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2022.02.08-01.36.35:708][  0]LogPackageLocalizationCache: Processed 26 localized package path(s) for 1 prioritized culture(s) in 0.000112 seconds
+[2022.02.08-01.36.35:716][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2022.02.08-01.36.35:716][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2022.02.08-01.36.35:717][  0]LogInit: Active device profile: [000002850EB31180][000002857E250010 49] WindowsNoEditor
+[2022.02.08-01.36.35:717][  0]LogInit: Profiles: [000002850EB31480][000002850E25DB70 49] Windows, [000002850EB31180][000002857E250010 49] WindowsNoEditor, 
+[2022.02.08-01.36.35:750][  0]LogNetVersion: OnlineShooter 1.0.0, NetCL: 17155196, EngineNetVer: 17, GameNetVer: 0 (Checksum: 2065074109)
+[2022.02.08-01.36.35:790][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.02.08-01.36.35:790][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.02.08-01.36.35:794][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.02.08-01.36.35:815][  0]LogMoviePlayer: Initializing movie player
+[2022.02.08-01.36.35:815][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: 3A5EE09C46BE84973E897780A2766418 | Instance: 7F490E484073B7A6C25899B3E8E2BF95 (DESKTOP-L9AB0F6-148).
+[2022.02.08-01.36.35:817][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.02.08-01.36.35:817][  0]LogOcInput: OculusInput pre-init called
+[2022.02.08-01.36.35:823][  0]LogUObjectArray: 15798 objects as part of root set at end of initial load.
+[2022.02.08-01.36.35:823][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2022.02.08-01.36.35:824][  0]LogUObjectAllocator: 3223032 out of 0 bytes used by permanent object pool.
+[2022.02.08-01.36.35:824][  0]LogUObjectArray: CloseDisregardForGC: 15798/15798 objects in disregard for GC pool
+[2022.02.08-01.36.35:825][  0]LogEngine: Initializing Engine...
+[2022.02.08-01.36.35:827][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
+[2022.02.08-01.36.35:827][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.02.08-01.36.35:828][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.02.08-01.36.35:886][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.02.08-01.36.35:887][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.02.08-01.36.35:889][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2022.02.08-01.36.35:892][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2022.02.08-01.36.35:893][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.02.08-01.36.35:893][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.02.08-01.36.35:894][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.08-01.36.35:894][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.08-01.36.35:894][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.08-01.36.35:895][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.08-01.36.35:895][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.08-01.36.35:895][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.08-01.36.35:896][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.08-01.36.35:896][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.08-01.36.35:897][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.08-01.36.35:897][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.08-01.36.35:897][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.08-01.36.35:898][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.08-01.36.35:903][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.02.08-01.36.35:913][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.08-01.36.35:914][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.02.08-01.36.35:943][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.02.08-01.36.35:943][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.08-01.36.35:944][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.08-01.36.35:944][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.08-01.36.35:946][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.08-01.36.35:946][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.08-01.36.35:947][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.08-01.36.35:948][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.08-01.36.35:948][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.08-01.36.35:948][  0]LogInit: FAudioDevice initialized.
+[2022.02.08-01.36.35:949][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.02.08-01.36.35:949][  0]LogInit: Texture streaming: Enabled
+[2022.02.08-01.36.35:951][  0]LogTemp: Warning: INIT
+[2022.02.08-01.36.35:952][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.02.08-01.36.35:952][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.08-01.36.35:953][  0]LogInit: Display: Game Engine Initialized.
+[2022.02.08-01.36.35:953][  0]LogInit: Display: Starting Game.
+[2022.02.08-01.36.35:954][  0]LogNet: Browse: /Game/Scenes/MainMenu?Name=Player
+[2022.02.08-01.36.35:957][  0]LogLoad: LoadMap: /Game/Scenes/MainMenu?Name=Player
+[2022.02.08-01.36.35:957][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2022.02.08-01.36.35:958][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.02.08-01.36.35:958][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.08-01.36.35:962][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.08-01.36.35:964][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2022.02.08-01.36.35:969][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'MainMenu'.
+[2022.02.08-01.36.35:972][  0]LogAIModule: Creating AISystem for world MainMenu
+[2022.02.08-01.36.35:972][  0]LogLoad: Game class is 'BP_mMenu_GameModeBase_C'
+[2022.02.08-01.36.35:973][  0]LogWorld: Bringing World /Game/Scenes/MainMenu.MainMenu up for play (max tick rate 0) at 2022.02.08-01.36.35
+[2022.02.08-01.36.35:973][  0]LogWorld: Bringing up level for play took: 0.000286
+[2022.02.08-01.36.35:974][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2022.02.08-01.36.35:975][  0]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.02.08-01.36.35:975][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.02.08-01.36.35:976][  0]LogLoad: Took 0.019212 seconds to LoadMap(/Game/Scenes/MainMenu)
+[2022.02.08-01.36.35:977][  0]LogSlate: Took 0.000316 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2022.02.08-01.36.36:053][  0]LogSlate: Took 0.000437 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.02.08-01.36.36:107][  0]LogRenderer: Reallocating scene render targets to support 1600x900 Format 10 NumSamples 1 (Frame:1).
+[2022.02.08-01.36.36:107][  0]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+[2022.02.08-01.36.36:108][  0]LogPakFile: AllPaks IndexSizes: DirectoryHashSize=204436, PathHashSize=16, EntriesSize=32752, TotalSize=237204
+[2022.02.08-01.36.36:109][  0]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+[2022.02.08-01.36.36:109][  0]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+[2022.02.08-01.36.36:110][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.02.08-01.36.36:111][  0]LogLoad: (Engine Initialization) Total time: 3.89 seconds
+[2022.02.08-01.36.36:113][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.02.08-01.36.36:114][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.08-01.36.36:157][  0]LogSlate: Slate font cache was flushed
+[2022.02.08-01.36.36:158][  1]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.02.08-01.36.36:159][  1]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2022.02.08-01.37.01:499][167]LogTemp: Warning: Join server clicked
+[2022.02.08-01.37.06:512][920]LogTemp: Warning: OnFindSessionsComplete success=1
+[2022.02.08-01.37.06:513][920]LogTemp: Warning: Sessions found=1
+[2022.02.08-01.37.06:514][920]LogTemp: Warning: attempting to join existing session
+[2022.02.08-01.37.06:514][920]LogTemp: Warning: JoinSession complete: My Session
+[2022.02.08-01.37.06:515][920]LogTemp: Warning: joining SERVER: 192.168.0.69:0
+[2022.02.08-01.37.06:516][920]LogNet: Browse: 192.168.0.69:0/Game/Scenes/MainMenu?Name=Player
+[2022.02.08-01.37.06:516][920]LogSteamShared: Display: Loading Steam SDK 1.51
+[2022.02.08-01.37.06:554][920]LogSteamShared: Steam SDK Loaded!
+[2022.02.08-01.37.06:554][920]LogOnline: OSS: Creating online subsystem instance for: STEAM
+[2022.02.08-01.37.06:686][920]LogSteamShared: Warning: SteamAPI failed to initialize, conditions not met.
+[2022.02.08-01.37.06:687][920]LogOnline: Warning: STEAM: Steamworks: SteamUtils() failed!
+[2022.02.08-01.37.06:688][920]LogOnline: Warning: STEAM: Steamworks: SteamUser() failed!
+[2022.02.08-01.37.06:688][920]LogOnline: Warning: STEAM: Steamworks: SteamFriends() failed!
+[2022.02.08-01.37.06:689][920]LogOnline: Warning: STEAM: Steamworks: SteamRemoteStorage() failed!
+[2022.02.08-01.37.06:690][920]LogOnline: Warning: STEAM: Steamworks: SteamUserStats() failed!
+[2022.02.08-01.37.06:691][920]LogOnline: Warning: STEAM: Steamworks: SteamMatchmakingServers() failed!
+[2022.02.08-01.37.06:691][920]LogOnline: Warning: STEAM: Steamworks: SteamApps() failed!
+[2022.02.08-01.37.06:692][920]LogOnline: Warning: STEAM: Steamworks: SteamNetworking() failed!
+[2022.02.08-01.37.06:692][920]LogOnline: Warning: STEAM: Steamworks: SteamMatchmaking() failed!
+[2022.02.08-01.37.06:692][920]LogOnline: STEAM: [AppId: 0] Client API initialized 0
+[2022.02.08-01.37.06:693][920]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2022.02.08-01.37.06:693][920]LogOnline: Warning: STEAM: Steam API failed to initialize!
+[2022.02.08-01.37.06:694][920]LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+[2022.02.08-01.37.06:694][920]LogOnline: OSS: Unable to create OnlineSubsystem module STEAM
+[2022.02.08-01.37.06:695][920]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2022.02.08-01.37.06:695][920]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2022.02.08-01.37.06:696][920]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.02.08-01.37.06:697][920]LogNet: Game client on port 0, rate 100000

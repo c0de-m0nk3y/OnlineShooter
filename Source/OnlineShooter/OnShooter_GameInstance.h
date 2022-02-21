@@ -7,6 +7,7 @@
 #include "Interfaces/OnlineSessionInterface.h"
 #include "OnShooter_GameInstance.generated.h"
 
+
 /**
  * 
  */
@@ -37,5 +38,6 @@ protected:
 	UFUNCTION(BlueprintCallable)
 		void JoinServer();
 
+	class IOnlineSubsystem* subSystem;
 
 };

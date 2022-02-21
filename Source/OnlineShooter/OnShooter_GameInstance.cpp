@@ -16,7 +16,7 @@ UOnShooter_GameInstance::UOnShooter_GameInstance()
 void UOnShooter_GameInstance::Init()
 {
 	UE_LOG(LogTemp, Warning, TEXT("INIT"));
-	IOnlineSubsystem* subSystem = IOnlineSubsystem::Get();
+	subSystem = IOnlineSubsystem::Get();
 	if (subSystem == nullptr)
 	{
 		UE_LOG(LogTemp, Error, TEXT("ERROR: subSystem was nullptr"));
@@ -43,7 +43,7 @@ void UOnShooter_GameInstance::OnCreateSessionComplete(FName ServerName, bool suc
 	UE_LOG(LogTemp, Warning, TEXT("OnCreateSessionComplete success=%d"), success);
 	if (success)
 	{
-		GetWorld()->ServerTravel("/Game/Scenes/dev_scene?listen", true);
+		GetWorld()->ServerTravel("/Game/Scenes/dev_scene?listen");
 	}
 }
 
@@ -70,13 +70,19 @@ void UOnShooter_GameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSe
 {
 	UE_LOG(LogTemp, Warning, TEXT("JoinSession complete: %s"), *SessionName.ToString());
 	
-	if (APlayerController* playerController = UGameplayStatics::GetPlayerController(GetWorld(), 0))
+	if (Result == EOnJoinSessionCompleteResult::Type::Success)
+		UE_LOG(LogTemp, Warning, TEXT("JOIN OK"));
+	if (Result != EOnJoinSessionCompleteResult::Type::Success)
+		UE_LOG(LogTemp, Warning, TEXT("JOIN NOT OK"));
+
+	
+	if (APlayerController* playerController = GetFirstLocalPlayerController())
 	{
 		FString join_address;
 		if (sessionInterface->GetResolvedConnectString(SessionName, join_address))
 		{
 			UE_LOG(LogTemp, Warning, TEXT("joining SERVER: %s"), *join_address);
-			playerController->ClientTravel(join_address, ETravelType::TRAVEL_Relative);
+			playerController->ClientTravel(join_address, ETravelType::TRAVEL_Absolute);
 		}
 
 		
@@ -88,12 +94,15 @@ void UOnShooter_GameInstance::CreateServer()
 	UE_LOG(LogTemp, Warning, TEXT("CreateServer"));
 
 	FOnlineSessionSettings s;
+	s.bAllowInvites = true;
 	s.bAllowJoinInProgress = true;
+	s.bAllowJoinViaPresence = true;
 	s.bIsDedicated = false;
-	s.bIsLANMatch = true; //LAN
+	s.bIsLANMatch = true; //LAN FOR NULL SUBSYSTEM
 	s.bShouldAdvertise = true;
 	s.bUsesPresence = true;
 	s.NumPublicConnections = 5;
+
 
 	sessionInterface->CreateSession(0, FName("My Session"), s);
 }
